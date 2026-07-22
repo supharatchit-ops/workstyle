@@ -184,7 +184,7 @@
         </div>
         <p style="text-align: center; color: #666; font-size: 0.95rem; margin-bottom: 15px;">
             ระบบบันทึกคำตอบและส่งผลลัพธ์ไปยังอีเมลของท่านเรียบร้อยแล้ว<br>
-            ด้านล่างคือผลการวิเคราะห์สไตล์การทำงานของท่านจากตอนที่ 1
+            ด้านล่างคือผลการวิเคราะห์สไตล์การทำงานของท่านจากส่วนที่ 1
         </p>
         <div id="expChartContainer"></div>
     </div>
@@ -216,8 +216,8 @@
                     <div class="instructions-box">
                         <strong style="color: var(--primary-red); font-size: 1.05rem;">คำชี้แจงการทำแบบประเมิน:</strong>
                         <ul style="margin-bottom: 18px;">
-                            <li><strong>ตอนที่ 1 (24 ข้อ):</strong> แบบเลือกตอบ วิเคราะห์สไตล์การทำงาน</li>
-                            <li><strong>ตอนที่ 2 (4 ข้อ):</strong> แบบข้อเขียน ให้ข้อมูลเชิงความคิดเห็นและความคาดหวังต่อหลักสูตร</li>
+                            <li><strong>ส่วนที่ 1 (24 ข้อ):</strong> แบบเลือกตอบ วิเคราะห์สไตล์การทำงาน</li>
+                            <li><strong>ส่วนที่ 2 (4 ข้อ):</strong> แบบข้อเขียน ให้ข้อมูลเชิงความคิดเห็นและความคาดหวังต่อหลักสูตร</li>
                             <li>ใช้เวลาทำแบบประเมินรวมประมาณ 12 - 15 นาที</li>
                         </ul>
 
@@ -238,19 +238,19 @@
             <!-- View 2: Transition Part 1 -->
             <div id="view-transition-p1" style="display: none;">
                 <div class="content-section transition-box">
-                    <h2>เตรียมพร้อมเข้าสู่ ตอนที่ 1</h2>
+                    <h2>เตรียมพร้อมเข้าสู่ ส่วนที่ 1</h2>
                     <p class="intro-text">แบบประเมินวิเคราะห์สไตล์การทำงานของท่าน</p>
                     <hr style="margin: 20px 0; border: none; border-top: 1px dashed #ccc;">
                     <div style="background-color: #fdf5f5; border-left: 4px solid var(--primary-red); padding: 20px; text-align: left; margin-bottom: 10px; border-radius: 4px;">
-                        <strong style="color: var(--primary-red); font-size: 1.1rem;">ตอนที่ 1 (24 ข้อ):</strong>
+                        <strong style="color: var(--primary-red); font-size: 1.1rem;">ส่วนที่ 1 (24 ข้อ):</strong>
                         <p style="margin-top: 10px; color: #444; line-height: 1.7; font-size: 1rem;">
-                            เลือกคำตอบที่รู้สึกว่า "ตรงกับความเป็นตัวคุณมากที่สุด" แบบประเมินนี้ ไม่มีคำตอบที่ถูกหรือผิด สามารถตอบตามความรู้สึกจริงของคุณได้เลย
+                            โปรดเลือกคำตอบที่ สะท้อนความเป็นตัวท่านได้มากที่สุด แบบประเมินนี้ไม่มีคำตอบที่ถูกหรือผิด กรุณาตอบตามความรู้สึกและพฤติกรรมในการทำงานของท่านตามความเป็นจริง เพื่อให้ผลการประเมินสะท้อนแนวโน้มของ Competencies และรูปแบบการทำงานของท่านได้อย่างเหมาะสม
                         </p>
                     </div>
                 </div>
                 <div class="quiz-footer footer-between">
                     <button class="btn btn-prev" onclick="switchView('REG')">ย้อนกลับ</button>
-                    <button class="btn btn-next" onclick="startPart1()">เริ่มทำตอนที่ 1</button>
+                    <button class="btn btn-next" onclick="startPart1()">เริ่มทำส่วนที่ 1</button>
                 </div>
             </div>
 
@@ -258,7 +258,7 @@
             <div id="view-part1" style="display: none;">
                 <div class="content-section">
                     <div class="question-header">
-                        <span class="question-number" id="p1Number">ตอนที่ 1: ข้อที่ 1 / 24</span>
+                        <span class="question-number" id="p1Number">ส่วนที่ 1: ข้อที่ 1 / 24</span>
                         <h2 class="question-text">ข้อใดตรงกับสไตล์การทำงานของคุณมากที่สุด?</h2>
                     </div>
                     <div class="options-container" id="p1Options"></div>
@@ -271,14 +271,14 @@
             <!-- View 4: Transition Part 2 -->
             <div id="view-transition" style="display: none;">
                 <div class="content-section transition-box">
-                    <h2>เตรียมพร้อมเข้าสู่ ตอนที่ 2</h2>
+                    <h2>เตรียมพร้อมเข้าสู่ ส่วนที่ 2</h2>
                     <p class="intro-text">
-                        ท่านทำแบบประเมินสไตล์การทำงานตอนที่ 1 เสร็จเรียบร้อยแล้ว<br>
+                        ท่านทำแบบประเมินสไตล์การทำงานส่วนที่ 1 เสร็จเรียบร้อยแล้ว<br>
                         ต่อไปจะเป็นการ <b>ให้ข้อมูลเชิงความคิดเห็นและความคาดหวังต่อหลักสูตร</b>
                     </p>
                     <hr style="margin: 20px 0; border: none; border-top: 1px dashed #ccc;">
                     <div style="background-color: #fdf5f5; border-left: 4px solid var(--primary-red); padding: 20px; text-align: left; margin-bottom: 10px; border-radius: 4px;">
-                        <strong style="color: var(--primary-red); font-size: 1.1rem;">คำชี้แจงตอนที่ 2:</strong>
+                        <strong style="color: var(--primary-red); font-size: 1.1rem;">คำชี้แจงส่วนที่ 2:</strong>
                         <ul style="margin-top: 10px; padding-left: 20px; color: #444; line-height: 1.7; font-size: 1rem;">
                             <li>คำถามปลายเปิดทั้งหมด <b>4 ข้อ</b></li>
                             <li>กรุณาพิมพ์คำตอบ <b>100 - 150 ตัวอักษร</b> ต่อข้อ</li>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
                 <div class="quiz-footer footer-between">
-                    <button class="btn btn-prev" onclick="backToPart1()">ย้อนกลับไปตอนที่ 1</button>
+                    <button class="btn btn-prev" onclick="backToPart1()">ย้อนกลับไปส่วนที่ 1</button>
                     <button class="btn btn-next" onclick="startPart2()">เริ่มเขียนคำตอบ</button>
                 </div>
             </div>
@@ -296,7 +296,7 @@
             <div id="view-part2" style="display: none;">
                 <div class="content-section">
                     <div style="text-align: center; color: var(--primary-red); font-weight: 500; font-size: 1.1rem; margin-bottom: 25px; border-bottom: 2px dashed #e0e0e0; padding-bottom: 15px;">
-                        ตอนที่ 2: คุณอยากเห็นการพัฒนากระบวนการคิดของคุณอย่างไรบ้าง
+                        ส่วนที่ 2: คุณอยากเห็นการพัฒนากระบวนการคิดของคุณอย่างไรบ้าง
                     </div>
                     <div class="question-header" style="margin-bottom: 20px;">
                         <span class="question-number" id="p2Number">ข้อเขียนที่ 1 / 4</span>
@@ -324,7 +324,7 @@
                         
                         <p style="text-align: center; color: #666; font-size: 0.95rem; margin-bottom: 15px;">
                             ระบบบันทึกคำตอบและส่งผลลัพธ์ไปยังอีเมลของท่านเรียบร้อยแล้ว<br>
-                            ด้านล่างคือผลการวิเคราะห์สไตล์การทำงานของท่านจากตอนที่ 1
+                            ด้านล่างคือผลการวิเคราะห์สไตล์การทำงานของท่านจากส่วนที่ 1
                         </p>
 
                         <div id="chartContainer"></div>
@@ -592,7 +592,7 @@
             if(autoTimer) clearTimeout(autoTimer);
             updateProgress();
 
-            document.getElementById('p1Number').innerText = `ตอนที่ 1: ข้อที่ ${p1Index + 1} / 24`;
+            document.getElementById('p1Number').innerText = `ส่วนที่ 1: ข้อที่ ${p1Index + 1} / 24`;
             
             const q = currentQuestions[p1Index];
             const qId = q.id;
