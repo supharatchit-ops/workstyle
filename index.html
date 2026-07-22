@@ -39,8 +39,9 @@
         .input-group input { width: 100%; padding: 12px 15px; border: 2px solid var(--border-color); border-radius: 8px; font-size: 1rem; outline: none; transition: border-color 0.3s; }
         .input-group input:focus { border-color: var(--primary-red); }
 
-        .instructions-box { background-color: #fdf5f5; border-left: 4px solid var(--primary-red); padding: 15px 20px; border-radius: 4px; margin-bottom: 25px; }
-        .instructions-box ul { margin-top: 10px; padding-left: 20px; color: #555; line-height: 1.6; }
+        .instructions-box { background-color: #fdf5f5; border-left: 4px solid var(--primary-red); padding: 20px; border-radius: 4px; margin-bottom: 25px; }
+        .instructions-box ul { margin-top: 8px; padding-left: 20px; color: #444; line-height: 1.65; font-size: 0.95rem; }
+        .instructions-box li { margin-bottom: 6px; }
 
         .transition-box { text-align: center; padding: 20px 0; }
         .transition-box h2 { color: var(--primary-red); font-size: 1.8rem; margin-bottom: 15px; }
@@ -79,12 +80,10 @@
         .summary-header { text-align: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 15px; }
         .chart-box { position: relative; height: 295px; margin: 20px 0; background: #fdfdfd; border: 1px solid #e5e7eb; border-radius: 8px; padding-top: 20px; }
         
-        /* ขยับระยะขอบซ้ายเป็น 48px กันตัวเลขทับเส้นขอบ */
         .chart-grid { position: absolute; top: 20px; bottom: 70px; left: 48px; right: 20px; display: flex; flex-direction: column; justify-content: space-between; }
         .grid-line { width: 100%; border-bottom: 1px dashed #d1d5db; position: relative; }
         .grid-line.base { border-bottom: 2px solid #9ca3af; }
         
-        /* จัดตำแหน่งป้ายตัวเลขด้านซ้าย ไม่ให้เกินขอบกล่อง */
         .grid-label { 
             position: absolute; 
             left: -24px; 
@@ -213,13 +212,21 @@
                         <input type="email" id="regEmail" placeholder="your.email@company.com">
                     </div>
 
+                    <!-- อัปเดตคำชี้แจงและวัตถุประสงค์ตามร่างล่าสุด -->
                     <div class="instructions-box">
-                        <strong style="color: var(--primary-red);">คำชี้แจงการทำแบบประเมิน:</strong>
-                        <ul>
+                        <strong style="color: var(--primary-red); font-size: 1.05rem;">คำชี้แจงการทำแบบประเมิน:</strong>
+                        <ul style="margin-bottom: 18px;">
                             <li><strong>ตอนที่ 1 (24 ข้อ):</strong> แบบเลือกตอบ วิเคราะห์สไตล์การทำงาน</li>
                             <li><strong>ตอนที่ 2 (4 ข้อ):</strong> แบบข้อเขียน ให้ข้อมูลเชิงความคิดเห็นและความคาดหวังต่อหลักสูตร</li>
                             <li>ใช้เวลาทำแบบประเมินรวมประมาณ 12 - 15 นาที</li>
-                            <li style="margin-top: 10px; color: #da291c;"><strong>นโยบายความเป็นส่วนตัว (PDPA):</strong> ข้อมูลชื่อ-นามสกุล และอีเมลที่ท่านกรอกในแบบทดสอบนี้ จะถูกนำไปใช้เพื่อยืนยันตัวตน ประเมินผลการเรียนรู้ สำหรับการฝึกอบรมหลักสูตรนี้เท่านั้น โดยบริษัทฯ จะเก็บรักษาข้อมูลไว้เป็นความลับ และไม่มีการนำไปใช้เพื่อวัตถุประสงค์ทางการตลาดแต่อย่างใด</li>
+                        </ul>
+
+                        <strong style="color: var(--primary-red); font-size: 1.05rem;">วัตถุประสงค์ของการประเมิน และการใช้ข้อมูล:</strong>
+                        <ul>
+                            <li>แบบประเมินนี้จัดทำขึ้นเพื่อสำรวจแนวโน้ม Competencies ของผู้เข้าอบรมใน 4 ด้าน ได้แก่ Communication, Collaboration, Cognitive Capability และ Creativity เพื่อสะท้อนจุดแข็ง แนวโน้มการทำงาน และโอกาสในการพัฒนาของแต่ละบุคคล</li>
+                            <li>ผลการประเมินจะถูกนำไปใช้เพื่อประกอบการวิเคราะห์ข้อมูลเชิงภาพรวมของผู้เข้าอบรม และสนับสนุนการพัฒนาและการดำเนินหลักสูตรให้สอดคล้องกับวัตถุประสงค์ของโครงการ</li>
+                            <li>หลังจากทำแบบประเมินเสร็จสิ้น ท่านจะได้รับรายงานผลการประเมินของตนเองทันที ขณะที่ผลการประเมินรายบุคคลจะถูกส่งให้ผู้ประสานงานของโครงการเพื่อใช้ประกอบการพัฒนาบุคลากรตามวัตถุประสงค์ของหลักสูตร</li>
+                            <li>AirAsia Academy ให้ความสำคัญกับการคุ้มครองข้อมูลส่วนบุคคล ข้อมูลของท่านจะถูกใช้เฉพาะเพื่อการดำเนินโครงการ การวิเคราะห์ผล และการพัฒนาการเรียนรู้ภายใต้หลักการคุ้มครองข้อมูลส่วนบุคคล (PDPA) และจะไม่นำไปใช้เพื่อวัตถุประสงค์อื่นที่ไม่เกี่ยวข้องกับโครงการนี้</li>
                         </ul>
                     </div>
                 </div>
@@ -348,7 +355,7 @@
             { typeA: "COM", typeB: "CRE", textA: "ฉันเป็นตัวแทนในการเจรจาเชิงกลยุทธ์ เพื่อจับมือกับพาร์ทเนอร์ภายนอกและผลักดันธุรกิจในระดับภูมิภาคหรือระดับโลก", textB: "ฉันชอบเสนอไอเดียใหม่ ๆ ในที่ประชุม แม้ว่าจะเป็นแนวคิดที่แตกต่างจากเดิมก็ตาม" },
             { typeA: "COM", typeB: "CRE", textA: "ฉันพูดคุยเพื่อสร้างพลังใจเชิงบวกให้เพื่อนร่วมงาน และแชร์คำชมหรือความสำเร็จร่วมกันเสมอ", textB: "ฉันสนับสนุนให้เพื่อนร่วมทีมคิดนอกกรอบ และช่วยพัฒนาไอเดียเหล่านั้นให้เป็นจริง" },
             { typeA: "COM", typeB: "CRE", textA: "ฉันพูดคุยกับทีมอย่างเปิดใจคอยให้ฟีดแบ็กที่สร้างสรรค์ เพื่อช่วยให้ทีมเก่งขึ้นและทำงานอย่างมีความสุข", textB: "ฉันสร้างเวทีส่งเสริมความคิดสร้างสรรค์ และชื่นชมคนที่กล้าทดลองทำสิ่งใหม่ ๆ แม้ว่าจะล้มเหลวก็ตาม" },
-            { typeA: "COM", typeB: "CRE", textA: "ฉันสื่อสารวิสัยทัศน์ที่น่าตื่นเต้นและสร้างแรงบันดาลใจ เพื่อให้ทุกคนในองค์กรเห็นภาพความสำเร็จเดียวกัน", textB: "ฉันมักสังเกตข้อบกพร่องเล็ก ๆ น้อย ๆ ในงานวันทำงานปกติ และหาวิธีคิดริเริ่มปรับปรุงให้ดีขึ้นเรื่อย ๆ" },
+            { typeA: "COM", typeB: "CRE", textA: "ฉันสื่อสารวิสัยทัศน์ที่น่าตื่นเต้นและสร้างแรงบันาลใจ เพื่อให้ทุกคนในองค์กรเห็นภาพความสำเร็จเดียวกัน", textB: "ฉันมักสังเกตข้อบกพร่องเล็ก ๆ น้อย ๆ ในงานวันทำงานปกติ และหาวิธีคิดริเริ่มปรับปรุงให้ดีขึ้นเรื่อย ๆ" },
             { typeA: "COL", typeB: "COG", textA: "ฉันจัดประชุมสั้น ๆ ร่วมกับหัวหน้างานแผนกอื่น เพื่อวางแผนการทำงานร่วมกันและลดการทำงานที่ซ้ำซ้อน", textB: "ฉันยอมรับผิดอย่างจริงใจเมื่อทำงานพลาด และรีบหาวิธีแก้ไขพร้อมเรียนรู้จากความล้มเหลวนั้น" },
             { typeA: "COL", typeB: "COG", textA: "ฉันทำลายระบบการทำงานแบบแยกส่วน โดยกำหนดเป้าหมายร่วมและผลประโยชน์ร่วมกันของทุกฝ่าย", textB: "ฉันรักษาสติและอารมณ์ได้ดีเมื่อเผชิญกับสถานการณ์กดดัน และแสดงออกอย่างมีวุฒิภาวะเพื่อเป็นหลักยึดให้ทีม" },
             { typeA: "COL", typeB: "COG", textA: "ฉันให้ข้อมูลเกี่ยวกับบริษัทอย่างถูกต้องและปลอดภัยเมื่อต้องติดต่อกับลูกค้าหรือพาร์ทเนอร์ต่างองค์กร", textB: "ฉันยืดหยุ่นและพร้อมปรับตัวเมื่อแนวทางธุรกิจเปลี่ยนไป เพื่อนำพาคนอื่นในองค์กรผ่านช่วงเวลาที่ท้าทาย" },
