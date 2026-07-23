@@ -417,7 +417,7 @@
                 } else {
                     Swal.fire({
                         title: 'พบข้อมูลค้างไว้',
-                        text: "ต้องการทำแบบทดสอบต่อจากครั้งที่แล้วหรือไม่? (ระบบจะบันทึกข้อมูลไว้ให้ 30 นาที)",
+                        text: "ต้องการทำแบบสำรวจต่อจากครั้งที่แล้วหรือไม่? (ระบบจะบันทึกข้อมูลไว้ให้ 30 นาที)",
                         icon: 'info',
                         showCancelButton: true,
                         confirmButtonText: 'ทำต่อ',
@@ -557,7 +557,7 @@
 
             Swal.fire({
                 title: 'กำลังตรวจสอบอีเมล...',
-                text: 'กรุณารอสักครู่ ระบบกำลังตรวจสอบสิทธิ์การทำแบบทดสอบ',
+                text: 'กรุณารอสักครู่ ระบบกำลังตรวจสอบสิทธิ์การทำแบบสำรวจของคุณ',
                 allowOutsideClick: false,
                 didOpen: () => { Swal.showLoading(); }
             });
@@ -573,7 +573,7 @@
 
                 if (resData.status === 'duplicate') {
                     Swal.fire({
-                        title: 'ไม่สามารถทำแบบทดสอบได้',
+                        title: 'ไม่สามารถทำแบบสำรวจได้',
                         text: resData.message,
                         icon: 'error',
                         confirmButtonColor: '#da291c'
